@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <!--
+        form标签是表单标签
+            action 属性设置提交的服务器地址
+            method 属性设置提交的方式  GET(默认值) 或 POST
+
+        表单提交时，没有提交到服务器的几个原因：
+            1. 表单项没有name属性值
+            2. 单选，复选，下拉列表必须要加value属性值
+            3. 表单项，必须在提交的form标签内
+
+        GET请求的特点：
+            1. 浏览器地址栏中是action属性值+?+表单项值(请求的参数)
+                表单项值的格式是：name=value&name=value...
+            2. 不安全
+            3. 有长度限制
+
+        POST请求的特点：
+            1. 浏览器地址栏中只有action的属性值
+            2. 安全
+            3. 没有长度限制
+
+        input type="text" 普通文本输入框  value属性设置默认值
+        input type="password" 密码输入框  value属性设置默认值
+        input type="radio" 单选框  name属性给单选框分组 checked="checked"表示默认选中
+        input type="checkbox" 复选框
+        input type="reset" 重置按钮，回到页面初始状态 
+            value 设置按钮显示的内容
+        input type="submit" 提交按钮
+        input type="file" 上传文件
+        input type="button" 按钮  value 设置按钮显示的内容
+        input type="hidden" 隐藏域  当表单希望提交某些数据，而这些数据不需要用户采集或参与
+
+        select 下拉列表
+        option 下拉列表项 selected="selected" 默认选中
+
+        textarea标签多行文本输入框  默认值是起始标签和结束标签当中的值
+            rows 设置行数
+            cols 设置列数
+      -->
+    <form action="https://www.baidu.com" method="GET">
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="male" checked="checked">男
+                    <input type="radio" name="sex" value="female">女
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="cpp">C++
+                    <input type="checkbox" name="hobby" value="java">Java
+                    <input type="checkbox" name="hobby" value="js">JavaScript
+                </td>
+            </tr>
+            <tr>
+                <td>国籍：</td>
+                <td>
+                    <select name="country">
+                        <option value="none">--请选中国籍--</option>
+                        <option value="chn">中国</option>
+                        <option value="usa">美国</option>
+                        <option value="jpn">日本</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我评价：</td>
+                <td><textarea name="desc" rows="10" cols="30">我是默认值</textarea></td>
+            </tr>
+            <tr>
+                <td><input type="reset" name=""></td>
+                <td><input type="submit" value="提交"></td>
+            </tr>
+        </table>
+        <input type="hidden" name="abc" value="123123">   
+    </form>
+</body>
+</html>
