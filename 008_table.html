@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <!-- 
+        table 表格标签
+        tr - table row 一个表格行
+        th - table header 一个表格单元头
+        td - table data 一个表格单元格
+     -->
+     <h3>一个基本的表格</h3>
+    <table>
+        <tr>
+            <th>1.1</th>
+            <th>1.2</th>
+            <th>1.3</th>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>3.2</td>
+            <td>3.3</td>
+        </tr>
+    </table>
+
+    <h3>表格跨行跨列</h3>
+    <table border="1" cellspacing="0" width="200" height="200">
+        <tr>
+            <td colspan="2">1.1</td>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2.1</td>
+            <td>2.2</td>
+            <td>2.3</td>
+            <td>2.4</td>
+            <td>2.5</td>
+        </tr>
+        <tr>
+            <td>3.2</td>
+            <td>3.3</td>
+            <td>3.4</td>
+            <td>3.5</td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>4.2</td>
+            <td>4.3</td>
+            <td colspan="2" rowspan="2">4.4</td>
+        </tr>
+        <tr>
+            <td>5.1</td>
+            <td>5.2</td>
+            <td>5.3</td>
+        </tr>
+    </table>
+</body>
+</html>
