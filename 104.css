@@ -1,0 +1,28 @@
+/* id选择器 */
+#only {
+    background-color: red;
+}
+
+#only1 {
+    background-color: green;
+}
+
+/* class选择器 */
+.demo {
+    background-color: yellow;
+}
+
+.demo1 {
+    color: #f40;
+}
+
+/* 标签选择器 */
+p {
+    color: red;
+    background-color: powderblue;
+}
+
+/*4.通配符选择器*/
+* {
+    font-weight: bold;
+}
