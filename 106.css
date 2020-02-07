@@ -1,0 +1,22 @@
+/* 父子选择器/派生选择器，会对嵌套内的所有标签起作用，会对所有具有 div span 结构的标签起作用 */
+div span {
+    background-color: red;
+}
+
+/* div strong em {} also works */
+strong em {
+    background-color: yellow;
+}
+/* 只要是父子结构就行，不一定非要标签选择器 */
+.wrapper .box em {
+    font-size: 150%;
+}
+
+div strong span {
+    color: yellow;
+}
+
+/* 直接子元素选择器，不会对内部嵌套的起作用，会对所有具有 div span 结构的标签起作用 */
+div > span {
+    font-weight: bold;
+}
