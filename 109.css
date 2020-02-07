@@ -1,0 +1,27 @@
+/* group selector, 分组选择器，共用一个代码块 */
+strong, em, p {
+    background-color: red;
+}
+
+/* In project, each element in a new line */
+/* applied to tag, id, class, etc... */
+#id1,
+#id2,
+#id3 {
+    font-family: arial;
+    color: yellow;
+}
+
+.demo1,
+.demo2 {
+    width: 100px;
+    height: 100px;
+}
+
+.demo1 {
+    background-color: red;
+}
+
+.demo2 {
+    background-color: green;
+}
