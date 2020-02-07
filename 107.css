@@ -1,0 +1,4 @@
+/* 浏览器是自右向左找 em -> a -> li ... */
+section div ul li a em {
+    background-color: red;
+}
