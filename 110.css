@@ -1,0 +1,61 @@
+div {
+    /* 默认 16px */
+    /* 设置的是字体的高度 */
+    font-size: 20px;
+    font-weight: bold;
+    /* lighter normal bold bolder */
+    /* 100 200 ... 900 */
+    font-style: italic;
+    font-family: arial;
+    color: #000000;
+    /*
+    1. 纯英文单词
+    2. 颜色代码
+    3. 颜色函数
+    r      g      b
+    00-ff  00-ff  00-ff 饱和程度
+    #000000 黑色 (#000)
+    #ffffff 白色 (#fff)
+    */
+}
+
+#red {
+    color: #f00;
+    /* 每两位都是重复的话可以简写 */
+    /* color: #ff0000 */
+}
+
+#green {
+    color: #0f0;
+    /* color: #00ff00; */
+}
+
+#blue {
+    color: rgb(0, 0, 255);
+    /* color: #0000ff; */
+}
+
+#square {
+    border: 10px solid black;
+    border-width: 1px;
+    border-style: dashed;
+    /*border-style: dotted;*/
+}
+
+#border1 {
+    width: 10px;
+    height: 10px;
+    border: 100px solid black;
+    border-left-color: red;
+    border-top-color: green;
+    border-bottom-color: #00f;
+}
+
+#triangle {
+    width: 0px;
+    height: 0px;
+    border: 100px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
