@@ -1,0 +1,29 @@
+#only {
+    background-color: red;
+}
+
+.demo {
+    background-color: green;
+}
+
+div {
+    background-color: powderblue;
+}
+
+/* 属性选择器，只选择属性 */
+[id] {
+    font-weight: bold;
+}
+
+[class] {
+    color: blue;
+}
+
+/* 属性选择器，属性="值" */
+[id="only1"] {
+    border: 3px solid pink;
+}
+
+p {
+    background-color: yellow!important;
+}
