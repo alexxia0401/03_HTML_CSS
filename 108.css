@@ -1,0 +1,39 @@
+ /* 并列选择器，其实就是当中没空格，一般性标签放在前面 */
+div.demo {
+    background-color: red;
+}
+
+/* 选中abc的多种方式 */
+#only {
+
+}
+
+.content em {
+
+}
+
+.wrapper > .content > .box {
+
+}
+
+div.wrapper > div[class="content"] > #only.box {
+
+}
+
+/* 同一排选择器， */
+/* 100 1 权重 */
+#idDiv p {
+    background-color: red;
+}
+
+/* 10      10 */
+.classDiv .classP {
+    background-color: green;
+}
+
+/*1    10   100 */
+div .classP#idP {
+    background-color: yellow;
+}
+
+/* 如果两个权重值一样，后面的生效，因为覆盖了前面的 */
